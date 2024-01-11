@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GROUPING TAGS SEMÂNTICAS ou seja são as DIVS SEMÂNTICAS -->
+    <!-- header, nav, main, footer -->
+    <title>Grouping Tags - Tags de Agrupamento</title>
+    <style>
+        body {
+            margin: 0px;  /*P ficar colado no navegador sem espaço */
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: cadetblue;
+            
+        }
+
+        header{
+            background-color:chartreuse;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: grey;
+            box-shadow: 1px 1px 1px black; /*Sombra nas Caixas*/
+            
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin-right: 30px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: cornsilk;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            
+        }
+
+        article {
+            background-color: wheat;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 20px; /*Arredondamento nas Bordas*/
+            
+        }
+
+        article > aside {
+            background-color: violet;
+            box-shadow: 1px 1px 1px black; /*Sombra nas Caixas*/
+            
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 5px;
+            text-align: center;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin-top: 20px;
+            margin-left: 20px;
+            background-color: white;
+            border-radius: 50%; /* Transformando a div em uma Bola/Circulo */
+        }
+
+        
+
+    </style>
+</head>
+
+<!-- HTML -->
+<!-- SEMÃNTICA - DAR SIGNIFICADOS SIGNIFICATIVOS ÀS COISAS -->
+<!-- Grouping Tagas - No HTML4 vc tinha as tags de agrupamento div e span.
+Já no HTML5 criou-se as divs semânticas. obs: na realidade elas tb são divs -->
+<!--CONCLUSÃO: ESSAS DIVS SÃO COMO AS DIVS COMUNS SÓ Q SÃO DIVS ESPECIAIS OU SEJA DIVS
+ SEMÂNTICAS -->
+<body>
+    <!-- div semântica header -->
+    <header>
+        <h1>Meu Site - (header)</h1>
+        <nav>
+            <!-- div semântica nav - para menu -->
+            <a href="#">Link1</a>
+            <a href="#">Link2</a>
+            <a href="#">Link3</a>
+            <a href="#">Link4</a>
+            <a href="#">Link5</a>
+        </nav>
+
+    </header>
+
+    <!-- div semântica main -->
+    <main>(main)
+        <section id="assuntos">
+            <article> <!--article(artigo) tb é uma div semântica.. -->
+                <h3>Esportes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Velit blanditiis vitae aliquid asperiores quidem rem totam,
+                    accusantium inventore enim officiis, molestiae accusamus non 
+                    aperiam eius. Dicta libero ullam quibusdam excepturi?
+                </p>
+                <aside> <!--aside tb é uma div semântica.. conteúdo periférico ao artigo -->
+                    <p>Escrito por Manuel Souza</p>
+                </aside>
+
+            </article>
+
+        </section>
+
+        <section id="noticias">
+            <article> <!--article(artigo) tb é uma div semântica.. -->
+                <h3>Notícias sobre o Brasil</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Aliquam facilis nobis sed repudiandae laudantium nostrum 
+                    unde explicabo dignissimos, porro, quidem, asperiores ullam 
+                    quod quos consectetur? Quia veritatis ipsa illo perspiciatis.
+                </p>
+                <aside> <!--aside tb é uma div semântica.. conteúdo periférico ao artigo -->
+                    <p>Escrito por João da Silva</p>
+                </aside>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- div semântica footer -->
+    <footer>
+        <p>(footer)</p>
+        <p>Desenvolvido por Curso em Video</p>
+    </footer>
+
+    <div id="bola"></div>
+    <br><br><br><br><br>
+    
+</body>
+</html>

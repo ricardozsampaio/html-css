@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flex Box</title>
+        
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                background-color:blueviolet;
+                text-align: center;
+                height: 200px;
+                text-align: center;
+                /* Degradê no header */
+                background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+
+            }
+
+            header img {
+                max-width: 100px;/*A imagem fica fixa nesse tamanho de 100px nao importa a reselução da tela*/
+                
+            }
+
+            nav{
+                background-color: chartreuse;
+                padding: 10px;
+                
+
+            }
+
+            nav a {
+                color: white;
+                padding: 10px;
+                text-decoration: none;
+                font-weight: bold;
+                border-radius: 5px; /*Arredondar as bordas dos botões do nav */
+            }
+
+            nav a:hover {
+                background-color: teal;
+            }
+
+            header h2 {
+                padding-top: 30px;
+            }
+
+            main {
+                background-color: burlywood;
+                text-align: center;
+                
+                
+
+            }
+            main h1 {
+                font-weight: normal;/*P o negrito ficar mais leve..*/
+            }
+
+            main p {
+                padding:10px;
+            }
+
+            aside {
+                text-align: left;
+                background-color: cadetblue;
+                padding: 5px;
+               
+                border-radius: 10px;
+                
+               
+                
+            }
+            aside ul {
+                list-style-position: inside;
+                columns: 2;
+            }
+            aside h3 {
+                padding: 10px;
+                background-color: darkgoldenrod;
+                margin: -5px;
+                border-radius: 5px 5px 0 0 ;/*Bordas arredondadas acima/esqueda e acima/direita*/
+            }
+
+            .video {
+                background-color: chartreuse;
+            }
+
+            iframe {
+                max-width: 90%;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            .int {
+                width: 200px;
+                height: 200px;
+                background-color: blueviolet;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin:auto;
+                line-height:200px;/*centralizando verticalmente*/
+            }
+
+            footer {
+                color: white;
+                font-weight: bolder;
+                background-color: black;
+                text-align: center;
+                padding: 5px;
+                margin-top: 20px;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Teste de Responsividade</h2>
+            <p>Tudo aquilo q vc sempre quis saber no mundo da tecnologia</p>
+            <img src="olho.png" alt="">
+        </header>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Notícias</a>
+            <a href="#">Curiosidade</a>
+            <a href="#">Fale-Conosco</a>
+
+        </nav>
+
+        <main>
+           <h1>Testando Responsividade</h1>
+           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Ratione recusandae explicabo, similique veniam optio enim at 
+                sequi eveniet aliquid dolorum magnam sint eum quis soluta dolor
+                tempora odit voluptatem blanditiis.
+            </p>
+            
+            <!-- USANDO PICTURE E SOURCE MEDIA P SUBSTITUIÇÃO DE IMAGENS DEPENDENDO DO TAMANHO DA TELA -->
+            <picture>
+                <source media="(max-width:500px)" srcset="img/imagemTelaPequena.png"><!--Essa imagem pequena substitui a grande na tela c menos de 500px
+                                                                                     de largura ou seja p tela pequena entra essa imagem pequena.-->
+                <img src="img/imagemTelaGrande.png" alt=""><br><!--Essa é a imagem grande normal(imagem grande p tela grande)-->
+            </picture>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Odit perferendis pariatur natus doloremque aliquid omnis
+                similique unde accusamus repudiandae ad id, saepe cupiditate 
+                accusantium exercitationem aperiam ea adipisci! Nihil, sunt?
+            </p>
+            <div class="video">
+                <iframe width="560" height="315"
+                 src="https://www.youtube.com/embed/vWq-mIxvH3k"
+                  title="YouTube video player" frameborder="0"
+                   allow="accelerometer; autoplay; clipboard-write;
+                    encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <aside>
+                <h3>Quer aprender mais?</h3>
+                <p>Quero assunto critico em relação ao Android e que cada secção sempre
+                    foi nomeada em homenagem a um doce.....
+                </p>
+                <ul>
+                    <li><a href="#">Cucks</a></li>
+                    <li><a href="#">Donuts</a></li>
+                    <li><a href="#">Edat</a></li>
+                    <li><a href="#">Enev</a></li>
+                    <li><a href="#">Cucks</a></li>
+                    <li><a href="#">Donuts</a></li>
+                    <li><a href="#">Edat</a></li>
+                    <li><a href="#">Enev</a></li>
+                </ul>
+            </aside>
+            <div class="int">
+                INteragindo....
+            </div>
+                
+        </main>
+
+        <footer>
+            <p>footer</p>
+        
+        </footer>
+       
+        <script>
+            
+            
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+
+        body{
+            text-align: center;
+        }
+        
+        div {
+            display: inline-block;
+            margin: 0 auto;
+            width: 150px;
+            border: solid 1px red;
+            text-align:center;
+           
+            
+        }
+        /* Pseudo-Classes - Exemplo */
+        div:hover {    /* em todas as divs serão aplicadas o backgrond-color:yellow somente
+                         quando o mouse estiver sobre elas ou seja :hover */
+            background-color: yellow;
+        }
+
+        
+
+        
+        div#d4 {
+            background-color: yellowgreen;
+
+        }
+
+        div#d4 > p.textoOculto {/*O paragrafro p.textoOculto fica invisivel*/
+                                /*esse sinal de > diz q o p.textoOculto está em div#d4*/
+                                /*ou > quer dizer filho */
+            display: none;
+        }
+
+        /* Pseudo-Classes - Outro Exemplo */
+        div#d4:hover > p.textoOculto {/*O paragrafro p.textoOculto aparece quando coloca
+                                       o mouse sobre a div#d4 ou seja div#d4:hover*/
+            display: block;
+        }
+
+        .fundo {
+            background-color: chartreuse;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <h3>Primeiro exemplo de Pseudo-Classes</h3>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    <div id="d1">04</div>
+    <div id="d2">05</div>
+    <div id="d3">06</div>
+
+    <h3>Segundo exemplo de Pseudo-Classes</h3>
+    <div id="d4">
+        <p>Passe o mouse na <span class="fundo"> de fundo verde</span> para aparecer o texto oculto</p>
+        <p class="textoOculto">Texto Oculto</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Primeiramente mudar a cor do link p preto (visitado ou não visitado) */
+        a {
+            color: black;
+            text-decoration: none;/*Retirar o Sublinhado de Todos os LInks*/
+            font-weight: bold;
+        }
+
+        /* pseudo-classe visited */
+        a:visited {
+            color: red;
+        }
+
+        /* Sublinhar quando passar o mouse em cima dos links */
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Pseudo-Elemento */ /*Serve p colocar coisas antes e depois de um elemento*/
+        /* São caracterizado por 2 pontos + after ou before q é p alguma coisa aparecer depois ou antes na periferia*/ 
+        h1::after {
+            content: ' =>';
+            font-weight: normal;
+            color: yellow;
+        }
+
+        h1::before {
+            content: '<= ';
+            font-weight: normal;
+            color: yellow;
+        }
+
+        a::after {
+            content: '[link]';
+            color: darkgray;
+            font-weight: normal;
+        }
+
+       
+        
+
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.gustavoguanabara.github.io">Repositório do GitHub</a></li>
+        <li><a href="https://www.youtube.com/cursoemvideo">Canal do Youtube Curso em video</a></li>
+        <li><a href="https://www.cursoemvideo.com">Site Curso em video</a></li>
+    </ul>
+</body>
+</html>

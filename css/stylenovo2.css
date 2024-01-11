@@ -1,0 +1,35 @@
+/* Esse css estiliza a página indexCores.html e a pagina2.html */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-image: linear-gradient(to right, #f1d8c9, #f2c3a7);
+}
+main {
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 20px; /*Arredondamendo nas bordas da div main*/
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.527);/*Sombra na div main - na ordem:
+                                    Primeiro - sombra vai andar 5px p o lado
+                                    Segundo - sombra vai andar 5px p baixo
+                                    Terceiro - sombra vai se espalhar 15px
+                                    Quarto - cor e transparência da sombra 10px
+                                    */
+    
+}
+
+h1 {  
+    color: #f39209;
+    text-align: center;
+    
+}
+
+h2 {
+    color:#125189;
+   
+}
+
+p {
+    text-align: justify;
+}

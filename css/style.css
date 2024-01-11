@@ -1,0 +1,40 @@
+/* CSS DO ARQUVO Seletores01.html */
+/* @charset "utf-8" serve p não ter problemas c acentuação */
+@charset "utf-8";
+body {
+    background-color: cadetblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: white;
+}
+
+h1#principal {  
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+.basico {
+    color: green;
+}
+
+.intermediario {
+    color: yellow;
+}
+
+.avancado {
+    color: red;
+}
+
+.destaque {
+    background-color: seagreen;
+    text-align: center;
+}
+
+.destaque2 {
+    color: black;
+}

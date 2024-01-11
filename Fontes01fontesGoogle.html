@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em css</title>
+    <!-- IMPORTANDO A FONT Creepster DO GOOGLE FONT ATRAVÉS DE LINK. SEM @import -->
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <style>
+        /* OBS: A IMPORTAÇÃO DE FONTES IGUAL ABAIXO TEM Q ESTAR NA PRIMEIRA LINHA APÓS O STYLE
+        (COMO ABAIXO) OU NA PRIMEIRA LINHA DO CSS EM UM DOCUMENTO CSS EXTERNO */
+        /* OBS: Não exagera com várias fontes não. Geralmente temos no site 3 fontes
+        ou seja uma p Grandes Títulos, uma p Destaque e outra Normal... */
+        @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+        
+        
+        
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* TAMANHOS DE FONTES */
+            /* Medidas Absolutas -> cm, mm, in, px, pt, pc  */
+            /* Medidas Relativas -> em, ex, rem, vw, vh, % */
+            /* A w3c recomenda p o tamanho de fontes o uso do px e o em. */
+            /*16px = 1em *//* É bom usar no body a medida 'em', pois de acordo a tela essa medida acompanha*/
+            font-size: 1em;/*Usamos aqui 'em' mas pode utilizar px tb, conforme recomenda a w3c*/
+
+            /* PESOS DE FONTE -> É a fonte ficar mais magrinha e mais gordinha */
+            /* Pesos Fixos -> lighter, normal, bold e bolder */
+            /* Pesos Numéricos -> vai de 100 a 900 */
+            font-weight: bold;
+
+            /* ESTILOS DE FONTES */
+            /* Normal, Italic, Oblique, Initial, Inherit  */
+            font-style:normal;
+
+            /* SHORTHAND -> P encuratar as 4 declarações acima */
+            /* OBS: TEM UMA ORDEM: font-style, fonte-weight, font-size, font-family */
+            font: normal bold 1em arial, helvetica, sans-serif;/*Aqui está redundante pois ainda tem as 4 declarações acima q não foi apagada*/
+            /* 1em equivale a + ou - 16px */
+        }
+
+        
+        h3 {
+            /* SUBLINHADO */
+            font-family: 'Sedgwick Ave Display', Arial, Helvetica, sans-serif;/*FONT EXTERNA DO GOOGLE - Sedwick ave Display*/
+            text-decoration:underline;
+        }
+
+        h1, h2 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .fonteparagrafro {
+            font-family: 'Creepster';/*FONTE EXTERNA DO GOOGLE - CREEPSTER*/
+            font-size: 20px;
+        }
+
+        .fonteparagrafro2 {
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif; /*Fonte Externa do Google - Open Sans*/
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod quas
+        non corrupti laboriosam quos voluptatibus! Nihil necessitatibus ex
+        sit cupiditate, nostrum molestias qui cum laudantium cumque laboriosam,
+        dolorum dolores. Aliquam.
+    </p>
+    <h2>Sub-título do exercício</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Suscipit, possimus? Ducimus vitae ad dolor a debitis asperiores
+        repudiandae! Voluptates quos ipsa, labore reprehenderit quo beatae 
+        culpa veritatis molestias dolore at?
+    </p>
+    <h3>
+        Título Sublinhado
+    </h3>
+    <p class="fonteparagrafro">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Totam qui veritatis quae corporis excepturi facilis doloribus
+        nihil laboriosam praesentium cumque minima quam consequuntur,
+        at necessitatibus nam iusto tempora dolor repellat?
+    </p>
+
+    <p class="fonteparagrafro2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Totam qui veritatis quae corporis excepturi facilis doloribus
+        nihil laboriosam praesentium cumque minima quam consequuntur,
+        at necessitatibus nam iusto tempora dolor repellat?
+    </p>
+    
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="olho.png" type="image/x-icon">
+    <title>Meu primeiro exercicio</title>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Esse é meu primeiro documento HTML</p>
+    <h2>Simbolos</h2>
+    <p>&reg; - Marca Registrada</p>
+    <p>&copy; - Copyright</p>
+    <p>&trade; - Trade Marca(Marca registrada em ingles)</p>
+    <p>&euro; - Euro moeda</p>
+    <p>&Delta; - Delta</p>
+    <p>&uparrow; - seta p cima</p>
+    <br>
+    <h2>Emoji</h2>
+    <p>Entrar no site emojipedia.org</p>
+    <p>este paragrafo tem uma <strong>palavra em negrito</strong></p>
+    <p>este paragrafo tem uma <em>palavra em italico</em></p>
+    <p>podemos criar tb um <mark>texto marcado</mark></p>
+    <p>estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse paragrafro</p>
+    <p>esse texto tem uma <u>palavra sublinhada</u></p>
+    <p>esse texto tem uma <del>palavra deletada</del></p>
+    <p>texto sobreescrito x elevado a 20 - vai ficar assim: x<sup>20</sup></p>
+    <p>texto subescrito h2o com o 2 para baixo vai ficar assim: h<sub>2</sub>o</p>
+    <p>o código <code>getElementById('teste')</code> é um código javascript e com code fica c a letra monoespaçada ou seja fácil de ler códigos</p>
+    <p>outra maneira de fazer código fonte(com code e pre) - abaixo um código python</p>
+    <pre>
+        <code>
+            var num = int(input('Digite um número'))
+            if num % 2 == 0:
+                print(`o numero{num}é PAR`)
+            else:
+            print(`o numero {num} é IMPAR `)
+        </code>
+    </pre>
+    <p>😊😎</p>
+   
+ 
+    <!-- ////////////////////////////////////////////// -->
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol> <!--Normal -->
+        <li>Acordar</li>
+        <li>Ligar p o João</li>
+        <li>tomar café</li>
+        <li>escovar os dentes</li>
+    </ol>
+
+    <h4>Variações de listas ordenadas</h4>
+    <ol start="4">
+        <li>Acordar</li> <!--inicia do numero 4 -->
+        <li>Ligar p o João</li>
+        <li>tomar café</li>
+        <li>escovar os dentes</li>
+    </ol>
+
+    <ol type="a"> <!--Sequencia c letras Minusculas -->
+        <li>Acordar</li>  
+        <li>Ligar p o João</li>
+        <li>tomar café</li>
+        <li>escovar os dentes</li>
+    </ol>
+
+    <ol type="A"><!--Sequencia c letras Maiusculas -->
+        <li>Acordar</li>
+        <li>Ligar p o João</li>
+        <li>tomar café</li>
+        <li>escovar os dentes</li>
+    </ol>
+
+    <ol type="i"><!--Sequencia c numeros romanos minusculos -->
+        <li>Acordar</li>
+        <li>Ligar p o João</li>
+        <li>tomar café</li>
+        <li>escovar os dentes</li>
+    </ol>
+
+    <ol type="I"><!--Sequencia c numeros romanos maiusculos -->
+        <li>Acordar</li>
+        <li>Ligar p o João</li>
+        <li>tomar café</li>
+        <li>escovar os dentes</li>
+    </ol>
+
+    <!-- ////////////////////////////// -->
+    <hr>
+    <h2>Listas não ordenadas</h2>   <!-- Aquelas listas q as sequencias não fazem sentido ou seja não preciso enumerar -->
+    <ul><!--normal-->
+        <li>pão</li>
+        <li>leite</li>
+        <li>tomate</li>
+        <li>café</li>
+    </ul>
+
+    <h4>Variações de listas não ordenadas</h4>
+    <ul type="circle"><!--circle(bolinhas vazadas)-->
+        <li>pão</li>
+        <li>leite</li>
+        <li>tomate</li>
+        <li>café</li>
+    </ul>
+
+    <ul type="square"><!--square(quadradinhos)-->
+        <li>pão</li>
+        <li>leite</li>
+        <li>tomate</li>
+        <li>café</li>
+    </ul>
+
+    <!-- ////////////////////////////////////////////// -->
+    <hr>
+    <h2>Juntando Listas</h2>
+    <h3>ex: Minhas linguagens favoritas</h3>
+
+    <ol><!-- lista ordenada -->
+        <li>Antigas</li>
+        <ul><!-- lista não ordenada -->
+            <li>Cliper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ul>
+        <li>Novas</li>
+        <ul><!-- lista não ordenada -->
+            <li>PHP</li>
+            <li>python</li>
+            <li>javascript</li>
+            <li>Kotlin</li>
+
+        </ul>
+        
+    </ol>
+
+    <!--//////////////////////////////////////  -->
+    <h3>Outro ex: Meus Jogos favoritos</h3>
+    <ol> <!-- lista ordenada -->
+        <li>Nitendo</li>
+        <ol><!-- lista ordenada -->
+            <li>Mario Bross</li>
+                <ul type="circle">
+                    <li>Mario Bross 2</li>
+                    <li>Mini last level</li>
+                </ul>
+            <li>Nija Gaiden</li>
+        </ol>
+
+        <li>SuperNitendo</li>
+        <ol><!-- lista ordenada -->
+            <li>Mario</li>
+            <li>Donken Kong</li>
+        </ol>
+
+        <li>PlayStation</li>
+        <ol><!-- lista ordenada -->
+            <li>Final Fantasy</li>
+            <li>Castelvania</li>
+        </ol>
+    </ol>
+
+    <!-- ////////////////////////////////////////////// -->
+    <hr>
+    <hr>
+   <h2>Listas de Definição</h2> <!--é como se fossu um dicionário. vc tem uma dl(definition list ou lista de definição)  -->
+     
+   <dl> <!--DEFINIÇÃO -->
+        <dt>HTML</dt> <!--TERMO -->
+        <dd>Linguagem de marcação p criação de conteúdo de um site</dd> <!--DESCRIÇÃO do termo acima -->
+        <dt>CSS</dt>
+        <dd>Linguagem de estillização de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação p interatividade de um site</dd>
+   </dl>
+   <hr><hr><hr><hr>
+   <!-- ///////////////////////////////////////////////////////////// -->
+   <!-- ///////////////////////////////////////////////////////////// -->
+   <!-- LINKS - CAPITULO 10 -->
+   <h2>TRABALHANDO COM LINKS</h2>
+   <h3>LINKS EXTERNOS - é um link que vai apontar p outro site q não é nosso</h3>
+   <p>Ex: Vc pode acessar meu <a href="https://gustavoguanabara.github.io" target="_blank">repositório no GitHub</a></p>
+   <p>Ex2: Vc tb pode acessar meu <a href="https://youtube.com/cursoemvideo" target="_blank">canal gratuito no youtube </a></p>
+   
+   <h3>LINKS INTERNOS - É um link q vai apontar p páginas q estão dentro do nosso site ou seja no nosso próprio servidor</h3>
+   <p>Ex: Esse link interno vai acessar a <a href="tst.html">Página tst.html do site</a></p>
+    
+   <h3>LINKS P DOWNLOADS</h3>
+   <P>Ex: Baixe agora o<a href="informativo.pdf"  download="informativo.pdf"> informativo promenade</a></a></P>
+   <!--OBS: O atributo download="informativo.pdf" faz o download do arquivo ao invéz do arquivo abrir direto.-->
+
+    
+    <!-- <img src="img/abafador3.png" alt=""> -->
+    <!-- <img src="abafador1.png" alt=""> -->
+    <img src="https://us.123rf.com/450wm/wikagraphic/wikagraphic2011/wikagraphic201130562/wikagraphic201130562.jpg?ver=6" alt="">
+    <hr>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Abra essas imagens em dispositivos de tamanhos difentes!!</p>
+    <p>obs: essa técnica é feita APENAS COM HTML5 ou seja SEM CSS OU JAVASCRIPT</p>
+    <picture>
+        <!-- OBS: AS FOTOS(source)TEM Q ESTAR NA ORDEM DA MENOR P MAIOR COMO ABAIXO OU SEJA FOTO P, FOTO M, FOTO G -->
+        <source media="(max-width: 750px )" srcset="fotoP.png"><!--Tela maxima(até) 750px carrega foto p-->
+        <source media="(max-width: 1050px )" srcset="fotoM.png"><!--Tela maxima(até) 1050px carrega foto M-->
+        <img src="fotoG.png" alt=""><!--Tela Acima de 1050px carrega foto G-->
+        <!-- OU SEJA, CONCLUSÃO: SE TIVER UMA TELA PEQUENA CARREGA A FOTO PEQUENA
+             SE FOR A TELA MEDIA CARREGA A FOTO MÉDIA
+             E SE FORM A TELA GRANDE CARREGA A FOTO GRANDE
+        -->
+    </picture>
+    <br><br>
+    <hr>
+    <h1>Reproduzindo Audio</h1>
+    <audio src="BritneySpears.mp3" controls></audio>
+    <br><br><hr>
+
+    
+    
+    <video width="300px" height="300px" controls>
+        <source src="itaipavaspavideo.mp4"><!--primeiro o navegador tenta reproduzir este-->
+        <source src="itaipavavideo3.m4v"><!--segundo o navegador tenta reproduzir este-->
+        <source src="itaipavavideo3.webm"><!--terceiro o navegador tenta reproduzir este-->
+        <source src="itaipavavideo3.ogv"><!--Quarto o navegador tenta reproduzir este-->
+        <p>Seu Navegador não tem compatibilidade com reprodução de videos</p><!--Se não conseguir nenhum dá essa mensagem-->
+    </video>
+
+    <video width="300px" height="300px" controls>
+        <source src="itaipavavideo3.mp4"><!--primeiro o navegador tenta reproduzir este-->
+        <source src="itaipavavideo3.m4v"><!--segundo o navegador tenta reproduzir este-->
+        <source src="itaipavavideo3.webm"><!--terceiro o navegador tenta reproduzir este-->
+        <source src="itaipavavideo3.ogv"><!--Quarto o navegador tenta reproduzir este-->
+        <p>Seu Navegador não tem compatibilidade com reprodução de videos</p><!--Se não conseguir nenhum dá essa mensagem-->
+    </video>
+   
+    <h1>Inserindo Videos do Youtube</h1>
+    <!-- vai no youtube, seleciona o video, clica em compartilhar -> incomporar -> Copiar.
+    Então é só colar o código copiado do video do youtube no editor de códigos como abaixo -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vWq-mIxvH3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    
+    
+    <br><br><br><br><br><br>   
+
+   
+ 
+    <br><br><br><br><br><br>   
+</body>
+</html>
