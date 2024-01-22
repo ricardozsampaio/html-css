@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+
+    <style>
+        /* Configurando o container e o conteudo */
+        #container {
+             height: 500px; 
+            /* height: 95vh; */   /*Retira o height:500px acima se vc quiser fazer em relação ao body e  
+            coloca essa propriedade height:95vh*/
+            background-color: purple;
+            padding: 10px;
+            position: relative;/*p posicionar o #conteudo #conteudo Verticalmente e Horizontalmente dento do #container*/
+           
+        }
+        #conteudo {
+            height: 200px;
+            background-color: yellow;
+            width: 400px;
+            
+            position:absolute;/*p posicionar o conteudo #conteudo Verticalmente e Horizontalmente no #container*/
+
+            /*o #conteudo, q está absolute, com 50% left e top (abaixo) vai ficar ERRADO pois vai pegar a
+             beirada de cima e a beirada da esquerda do #conteudo. Assim vc tem fazer o
+              transform:translate(-50%, -50%) p o #conteudo ficar no meio CERTO em relacao ao container  */
+            left: 50%;/*p posicionar o conteudo #conteudo HORIZONTALMENTE dentro do #container*/
+            top: 50%;/*p posicionar o conteudo #conteudo VERTICALMENTE dentro do #container*/
+            transform: translate(-50%, -50%);/*p posicionar o conteudo #conteudo VERTICALMENTE e HORIZINTALMENTE dentro no #container*/
+        }
+    </style>
+</head>
+<body>
+    <!-- Quando vc vai centralizar verticalmente vc tem q ter a presença de um Container e de um Conteúdo -->
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
