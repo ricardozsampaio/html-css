@@ -1,0 +1,85 @@
+@charset 'utf-8';
+body {
+    background-color: aquamarine;
+}
+
+/* zera as margin e padding de todos os elementos */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body  {
+    background-color: cadetblue;
+}
+
+/*
+ HEADER----------------------------------- */
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* sublinha o texto quando passa o mouse */
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* SECTION
+-------------------------------------------- */
+
+section {
+    padding-top: 10vh;/*P toda section espaço de 10% vertical da viewport */
+    padding-bottom: 10vh;/*P toda section espaço de 10% vertical da viewport */
+    line-height: 2em;/*Espaçamento entre linhas do texto*/
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color:black;
+}
+
+section.imagem {
+    background-color: rgb(158, 148, 148);
+    color:white;
+}
+
+section.imagem p {
+    background-color: rgba(0, 0, 0, 0.308);
+    width: 400px;
+}
+
+
+
+
+
+/* FOOTER
+------------------------------------------ */
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
