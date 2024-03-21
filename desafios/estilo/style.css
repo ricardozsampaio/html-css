@@ -52,6 +52,7 @@ header a:hover, footer a:hover {
 /* SECTION
 -------------------------------------------- */
 
+/* Configuração p todas as sections */
 section {
     padding-top: 10vh;/*P toda section espaço de 10% vertical da viewport */
     padding-bottom: 10vh;/*P toda section espaço de 10% vertical da viewport */
@@ -61,20 +62,41 @@ section {
     
 }
 
+/* Configuração apenas p as section.normal */
 section.normal {
     background-color: white;
     color:black;
 }
 
+
+/* Configuração apenas p as section.imagem */
 section.imagem {
     background-color: rgb(158, 148, 148);
     color:white;
+    /* sombra interna nessa section.imagem */
+    box-shadow: inset 6px 6px 13px 0px black;
 }
 
 section.imagem p {
     width: 400px;
-    background-color: rgba(0, 0, 0, 0.308);
+    background-color: rgba(0, 0, 0, 0.5);
    
+}
+
+/* Configurando as imagens */
+section#img01 {
+    background-image: url('../dz012/imagens/background001.jpg');
+    background-size: cover;
+    background-position: center right;
+    background-attachment: fixed;
+
+}
+
+section#img02{
+    background-image: url('../dz012/imagens/background002.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 
 
