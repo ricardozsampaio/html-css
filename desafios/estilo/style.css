@@ -1,6 +1,9 @@
 @charset 'utf-8';
+
+
 body {
     background-color: aquamarine;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 /* zera as margin e padding de todos os elementos */
@@ -25,6 +28,7 @@ header {
 header > h1 {
     padding-top: 50px;
     text-transform: uppercase;
+    
 }
 
 header > p {
@@ -53,6 +57,8 @@ section {
     padding-bottom: 10vh;/*P toda section espaço de 10% vertical da viewport */
     line-height: 2em;/*Espaçamento entre linhas do texto*/
     padding-left: 30px;
+    font-size: 18px;
+    
 }
 
 section.normal {
@@ -66,8 +72,9 @@ section.imagem {
 }
 
 section.imagem p {
-    background-color: rgba(0, 0, 0, 0.308);
     width: 400px;
+    background-color: rgba(0, 0, 0, 0.308);
+   
 }
 
 
