@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colunas Personalizadas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table {
+            border-collapse: collapse;
+            width: 800px;
+            text-align: center;
+        }
+        td {
+            border: solid 1px black;
+            padding: 10px;
+            
+        }
+        
+        /* Classe p destacar as colunas */
+        col.c_nome {
+            background-color: chartreuse;
+        }
+
+        col.c_idade {
+            background-color: chocolate;
+        }
+
+        col.c_sexo, .c_profissao {
+            background-color: cornflowerblue;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <h1>Pintando várias colunas de uma vez.</h1>
+    <table>
+        <!-- CRIANDO UMA TAG COLGROUP P CADA COLUNA -->
+        <!-- ESSA TAG COL NÃO TEM A TAG DE FECHAMENTO -->
+        <!-- E CRIA UMA CLASSE P CADA COLUNA -->
+        <col class="c_nome"> 
+        <col class="c_idade">
+        <col class="c_sexo">
+        <col class="c_profissao">
+
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Sexo</th>
+            <th>Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td><!--a célula b está ocupando 2 COLUNAS-->
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr>
+            <td>Claudio</td>
+            <td>M</td><!--a célula b está ocupando 2 COLUNAS-->
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td><!--a célula b está ocupando 2 COLUNAS-->
+            <td>30</td>
+            <td>Professor</td>
+        </tr>
+
+        <tr>
+            <td>Helio</td>
+            <td>M</td><!--a célula b está ocupando 2 COLUNAS-->
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+
+        
+    </table>
+    
+</body>
+</html>
