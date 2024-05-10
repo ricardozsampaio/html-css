@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 002</title>
+</head>
+<body>
+    <form action="cadastro.php" method="POST">
+        <p>
+            <label for="iusuario">Usuário:</label>
+            <input type="text" name="usuario" id="iusuario" required minlength="5" maxlength="15" size="30" placeholder="Nome do usuário">
+           
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="15" size="30" placeholder="minimo de 8 caracteres">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <!-- FORMULÁRIO -->
+    <!-- O navegador quando interpreta o html do formulário ele tb executa o código javascript required
+         embutido no form html5 -->
+    <!-- minlength e maxlength é o minimo e máximo de Caracteres q vc pode digitar nas caixas -->
+    <!-- o atributo size é o tamanho fisico das caixas -->
+    <!-- o atributo placeholder são Dicas de preenchimento q aparece nas caixas -->
+    
+</body>
+</html>
