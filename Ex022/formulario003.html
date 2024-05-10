@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 003</title>
+</head>
+<body>
+    <form action="cadastro.php" method="POST">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required  maxlength="15" size="30">
+           
+        </p>
+        <p>
+            <!-- Caixa de Números -->
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" required min="0" max="10" step="0.1" placeholder="de 0 a 10">
+            <!-- Na caixa tipo number o min e max é p o numero minimo e o numero maximo digitado. 
+            nesse caso vai do numero 0 ao numero 10  -->
+            <!-- O atributo step é p vc poder digita decimais. nesse caso de 0.1 em 0.1 -->
+        </p>
+
+            
+        <p>
+            <!-- Caixa de Mês e Ano -->
+            <label for="imes">Mês:</label>
+            <input type="month" id="imes">
+        </p>
+
+
+        <!-- Quiser acrecentar o dia ou seja dia, mes e ano ou seja o input é do tipo date -->
+        <p>
+            <!-- Caixa de Dia, Mês e Ano -->
+            <label for="idiaMesAno">Data:</label>
+            <input type="date" id="idiaMesAno">
+        </p>
+
+        <p>OBS:Se vc já quiser sugerir o ano, dia e mês é só preencher um atributo chamado value.<br>
+              VC não precisa fazer o value na mão e sim automaticamente através de javascript
+        </p>
+
+        <!-- Caixa de Dia, Mês e Ano -->
+        <!-- Se vc já quiser sugerir o ano, dia e mês é só colocar o atributo value -->
+        <!-- VC não precisa fazer o value na mão e sim automaticamente através de javascript -->
+        <p>
+            <label for="idata">Data:</label>
+            <input type="date" id="idata" value="2024-05-10">
+        </p>
+
+        <p>
+            <!-- Caixa de Horário -->
+            <label for="ihora">Horário da Prova:</label>
+            <input type="time" id="ihora" value="2024-05-10">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <!-- FORMULÁRIO -->
+    <!-- O navegador quando interpreta o html do formulário ele tb executa o código javascript required
+         embutido no form html5 -->
+    <!-- minlength e maxlength é o minimo e máximo de Caracteres q vc pode digitar nas caixas -->
+    <!-- o atributo size é o tamanho fisico das caixas -->
+    <!-- o atributo placeholder são Dicas de preenchimento q aparece nas caixas -->
+    
+</body>
+</html>
