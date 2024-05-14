@@ -7,60 +7,93 @@
 </head>
 <body>
     <form action="cadastro.php" method="POST">
-        <p>
-            <label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome" required  maxlength="15" size="30">
-           
-        </p>
-
-
-        <!-- ELEMENTO NUMBERS, MONTH, DATE E TIME -->
-        <p>
-            <!-- Caixa de Números -->
-            <label for="imedia">Média:</label>
-            <input type="number" name="media" id="imedia" required min="0" max="10" step="0.1" placeholder="de 0 a 10">
-            <!-- Na caixa tipo number o min e max é p o numero minimo e o numero maximo digitado. 
-            nesse caso vai do numero 0 ao numero 10  -->
-            <!-- O atributo step é p vc poder digita decimais. nesse caso de 0.1 em 0.1 -->
-        </p>
-
+        <fieldset><!--O fildset serve p agrupar varios tipos de informações em vários fildset-->
+                  <!-- Vc pode fazer vários fildset p separar os grupos de informações de seu formulário -->
+                  <!-- Vc tb pode personaliza-lo via css normalmente (border, background-color, etc...) -->
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required  maxlength="15" size="30" autofocus>
             
-        <p>
-            <!-- Caixa de Mês e Ano -->
-            <label for="imes">Mês:</label>
-            <input type="month" id="imes">
-        </p>
+            </p>
 
 
-        <!-- Quiser acrecentar o dia ou seja dia, mes e ano ou seja o input é do tipo date -->
-        <p>
+            <!-- ELEMENTO NUMBERS, MONTH, DATE E TIME -->
+            <p>
+                <!-- Caixa de Números -->
+                <label for="imedia">Média:</label>
+                <input type="number" name="media" id="imedia" required min="0" max="10" step="0.1" placeholder="de 0 a 10">
+                <!-- Na caixa tipo number o min e max é p o numero minimo e o numero maximo digitado. 
+                nesse caso vai do numero 0 ao numero 10  -->
+                <!-- O atributo step é p vc poder digita decimais. nesse caso de 0.1 em 0.1 -->
+            </p>
+
+                
+            <p>
+                <!-- Caixa de Mês e Ano -->
+                <label for="imes">Mês:</label>
+                <input type="month" id="imes">
+            </p>
+
+
+            <!-- Quiser acrecentar o dia ou seja dia, mes e ano ou seja o input é do tipo date -->
+            <p>
+                <!-- Caixa de Dia, Mês e Ano -->
+                <label for="idiaMesAno">Data:</label>
+                <input type="date" id="idiaMesAno">
+            </p>
+
+            <p>OBS:Se vc já quiser sugerir o ano, dia e mês é só preencher um atributo chamado value.<br>
+                VC não precisa fazer o value na mão e sim automaticamente através de javascript
+            </p>
+
             <!-- Caixa de Dia, Mês e Ano -->
-            <label for="idiaMesAno">Data:</label>
-            <input type="date" id="idiaMesAno">
-        </p>
+            <!-- Se vc já quiser sugerir o ano, dia e mês é só colocar o atributo value -->
+            <!-- VC não precisa fazer o value na mão e sim automaticamente através de javascript -->
+            <p>
+                <label for="idata">Data:</label>
+                <input type="date" id="idata" value="2024-05-10">
+            </p>
 
-        <p>OBS:Se vc já quiser sugerir o ano, dia e mês é só preencher um atributo chamado value.<br>
-              VC não precisa fazer o value na mão e sim automaticamente através de javascript
-        </p>
+            <p>
+                <!-- Caixa de Horário -->
+                <label for="ihora">Horário da Prova:</label>
+                <input type="time" id="ihora" value="2024-05-10">
+            </p>
 
-        <!-- Caixa de Dia, Mês e Ano -->
-        <!-- Se vc já quiser sugerir o ano, dia e mês é só colocar o atributo value -->
-        <!-- VC não precisa fazer o value na mão e sim automaticamente através de javascript -->
-        <p>
-            <label for="idata">Data:</label>
-            <input type="date" id="idata" value="2024-05-10">
-        </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
 
-        <p>
-            <!-- Caixa de Horário -->
-            <label for="ihora">Horário da Prova:</label>
-            <input type="time" id="ihora" value="2024-05-10">
-        </p>
+            <p> 
+                <!-- Caixa de email -->
+                <label for="iemail">E-mail:</label>
+                <input type="email" id="iemail" name="email" autocomplete="email">
+            </p>
 
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+            <p>
+                <!-- Caixa de Telefone -->
+                <label for="itelefone">Telefone:</label>
+                <input type="tel" id="itelefone" name="telefone" placeholder="(xx)xxxxx-xxxx">
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="futebol" id="ifutebol"><label for="ifutebol">Futebol</label>
+            <input type="checkbox" name="basquete" id="ibasquete"><label for="ibasquete">Basquete</label>
+            <input type="checkbox" name="volei" id="ivolei"><label for="ivolei">Vôlei</label>
+            <input type="checkbox" name="tenis" id="itenis"><label for="itenis">Tênis</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imsexo" value="M"><label for="imsexo">Masculino</label>
+            <input type="radio" name="sexo" id="ifsexo" value="F"><label for="ifsexo">Feminino</label>
+        </fieldset>
+
     </form>
     <!-- FORMULÁRIO -->
     <!-- O navegador quando interpreta o html do formulário ele tb executa o código javascript required
