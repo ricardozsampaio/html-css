@@ -10,6 +10,7 @@
         <fieldset><!--O fildset serve p agrupar varios tipos de informações em vários fildset-->
                   <!-- Vc pode fazer vários fildset p separar os grupos de informações de seu formulário -->
                   <!-- Vc tb pode personaliza-lo via css normalmente (border, background-color, etc...) -->
+                  <!-- OBS: Vou colocar os labels e inputs dentro de parágrafos mas é bom colocar dentro de divs p vc poder estilizar -->
             <legend>Dados Pessoais</legend>
             <p>
                 <label for="inome">Nome:</label>
@@ -93,6 +94,74 @@
             <input type="radio" name="sexo" id="imsexo" value="M"><label for="imsexo">Masculino</label>
             <input type="radio" name="sexo" id="ifsexo" value="F"><label for="ifsexo">Feminino</label>
         </fieldset>
+
+        <fieldset>
+            <legend>Outros</legend>
+            <!-- Cor -->
+            <p>
+                <label for="icor">Cor</label>
+                <input type="color" name="cor" id="icor" value="#ff00ff">
+            </p>
+            
+            <!-- Nivel -->
+            <p>
+                <label for="inivel">Nível de Satisfação</label>
+                <input type="range" name="nivel" id="inivel" min="0" max="5" value="0">
+            </p>
+
+            <p>
+                <label for="ifoto">Foto do Perfil</label>
+                <input type="file" name="foto" id="ifoto">
+            </p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Outros Componentes de Formulário que Não São Input - Na verdade são inputs mas em Listas</legend>
+            <p>
+                <!-- Select -->
+                <label for="iselect">Estado</label>
+                <select name="select" id="iselect">
+                    <option value="" selected>--- Escolha ---</option><!--atributo selected p vim escrito escolha-->
+                    <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option> <!--Se vc colocaar aqui O atributo selected é p já vim selecionado ele-->
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+
+                    <optgroup label="Região Nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <!-- DataList -->
+                <!-- Data Lista - Lista q vc tb pode Digitar ao ivés de apenas escolher como acima nos estados -->
+                <label for="iprofissao">Profissão</label>
+                <input type="text" name="profissao" id="iprofissao" list="lstprof"><!--o atributo list é o mesmo id do datalist ou seja lstprof nesse caso-->
+                <datalist id="lstprof">
+                    <option value="ADM">Administrador</option>
+                    <option value="CONT">Contabilista</option>
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="PROF">Professor</option>
+                </datalist>
+
+            </p>
+
+            <p>
+                <!-- Caixa de Mensagem -->
+                <label for="imsg">Mensagem</label><br>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </p>
+        </fieldset>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
 
     </form>
     <!-- FORMULÁRIO -->
