@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário com a Tag output</h1>
+    
+    <form action="cadastro.php" method="POST"><!--action - essa ação vai ser disparada quando vc clicar no botao submit ou seja os dados vão ser enviados p uma linguagem de programação(um script) no servidor-->
+        <!-- OBS: Sempre coloque o mesmo for do label c o mesmo id das caixas de texto p vincula-los p os mecanismo de busca pois isso é importante -->
+        <!-- E mais: só de clicar no nome ou sobrenome no navegador já é selecionado as respectivas caixas de texto -->
+        <!-- Isso é p criar uma relação entre o Label e o Objeto Caixa de Texto -->
+        <p><label for="in1">Numero 1</label>
+           <input type="number" name="numero1" id="in1" min="0" max="50" required
+           oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+           <!--um pouco de javascipt - oninput(é o EVENTO QUANDO EU ENTRAR COM DADOS, 
+           na caixa output isoma.innerHTML vai aparecer o resultado da soma das caixas in1.value + in2.value-->
+           <!-- A função Number é p tranformar o q vc digita na caixa in1 e in2 em Número pois do contrário
+           é como se vc digitasse Texto(string) e concatenaria ao invéz de somar -->
+        </p>
+
+        <P><label for="isobrenome">Numero 2</label>
+           <input type="number" name="numero2" id="in2" min="0" max="50" required
+           oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+           <!-- Idem Acima -->
+        </P>
+
+       <!-- Caixa output -->
+        <p>
+            <label for="isoma">Soma</label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+
+        <p>
+           <input type="submit" value="Enviar">
+           <input type="reset" value="Limpar">
+        </p>
+
+       
+
+    </form>
+    <!-- OBS: Os métodos de envio de formulário GET e POST, quanto a segurança dos dados no Get os dados
+    vão junto com a url la em cima no navegador. Isso não é seguro pois dá p ver os dados enviados no
+    formulário. Por isso se envia com o método POST. Mas mesmo c esse métoda da p ver se vc não estiver usando
+    https.  P ver os dados quando vc não utiliza o https seguro é só vc, no navegador, preencher o formulário
+    , abrir o developer tools - network - e clicar em enviar no formulario.  assim na aba do devtools network
+    clica no arquivo da linguagem de programação q o formulario foi direcionado de vc vai ver na aba network
+    os dados!!!! --> <!--Aula 3 capitulo 24 , módulo 4 do curso html Gustavo Guanabara-->
+    <!-- Já a tranmissão de dados quando é feita c https os dados são Criptogrfados -->
+    <!-- Ou seja https é p Proteção de Dados -->
+    
+</body>
+</html>

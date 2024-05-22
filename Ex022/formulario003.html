@@ -105,8 +105,14 @@
             
             <!-- Nivel -->
             <p>
-                <label for="inivel">Nível de Satisfação</label>
-                <input type="range" name="nivel" id="inivel" min="0" max="5" value="0">
+                <label for="inivel">Nível de Satisfação - range</label>
+                <input type="range" name="nivel" id="inivel" min="0" max="5" value="0"
+                oninput="ivalor.innerHTML = inivel.value">
+                <output name="valor" id="ivalor">0</output>
+                <!-- O atributo min e max é q o valor do cursor vai de 0 a 5 -->
+                <!-- O atributo value="0" é q INICIALMENTE o cursor vem no nivel 0 -->
+                 <!--um pouco de javascipt - oninput(é o EVENTO QUANDO EU ENTRAR COM DADOS, 
+                 na caixa output ivalor.innerHTML vai aparecer o resultado do value do elemento range inivel  -->
             </p>
 
             <p>
