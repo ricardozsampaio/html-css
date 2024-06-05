@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries - Mesmo exercicio do MediaQueries2 mas COM AS CSS DECLARADAS NO ARQUIVO INDEX em vez de estar separadas em arquivos css externos</title>
+
+    <style>
+        /* Declarações css gerais */
+        *{
+    margin: 0px;
+    padding: 0px;
+    }
+
+    html, body{ /* Essa virgula é configurações p html e body */
+    width: 100vw;  /*Largura da tela*/
+    height:100vh ;/*Altura da tela*/
+    background-color: darkgrey;
+    background-size: contain;/*P Q A IMAGEM DE BACKGROUND(do arquivo retrato.css e paisagem.css) CAIBA NO TAMANHO DA TELA*/
+    background-repeat: no-repeat;/*P Q A IMAGEM DE BACKGROUND NÃO REPITA*/
+    background-position: center bottom;/*P A IMAGEM FICAR NO CENTRO E COLADO EM BAIXO NOS DOIS MODOS OU SEJA NO MODO RETRATO E NO MODO PAISAGEM*/
+    }
+
+    h1 {
+    color: blue;
+    text-shadow: 3px 3px 0px black ;/*Sombra no h1*/
+    padding: 10px;
+    }
+
+        /* Declarações retrato */
+        @media screen and (orientation: portrait){ /*Obs: É obrigatório o espaço entre o and e o inicio do parenteses*/
+            body {
+                background-color: #233eff;
+                background-image: url(imagens/cev-portrait.jpg);/*Imagem p tela em Pé ou seja tela modo Retrato*/
+            }
+            
+        }
+
+        /* Declarações paisagem */
+        @media screen and (orientation: landscape){ /*Obs: É obrigatório o espaço entre o and e o inicio do parenteses*/
+            body {
+                background-color:#233eff;
+                background-image: url(imagens/cev-landscape.jpg);/*Imagem p tela Deitada ou seja tela modo Paisagem*/
+    
+            }
+            
+        }
+    
+    </style>
+    
+    <!--Essa css SERVE P TODOS OS TIPOS DE MEDIA OU SEJA DESKTOP, IMPRESSORA, CELULAR, ETC...
+    ASSIM AS OUTRAS 2 retrato.css e paisagem.css são apenas p as configurações adcionais -->
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+
+    <!-- essa css retrato.css vai dar as configurações p todas as telas q estejam em modo retrato(ou seja o Dispositivo em Pé)  -->
+    <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation:portrait)">
+    
+    <!-- essa css retrato.css vai dar as configurações p todas as telas q estejam em modo paisagem(ou seja o Dispositivo em Deitado)  -->
+    <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation:landscape">
+</head>
+<body>
+    <h1>Mude a orientação de seu dispositivo</h1>
+    
+</body>
+</html>
