@@ -13,7 +13,8 @@ ou seja por isso o nome mobile-fist, essa css
 }
 
 html {
-    height: 100%;
+    height: 100%; /*ou height: 100vh*/
+    
 }
 
 body{
