@@ -1,7 +1,38 @@
 @charset "UTF-8";
 /* TODAS AS OUTRAS MIDIAS */
+/* Typical Device Breakpoints - Tamanhos de telas p os Diversos Dispositivos */
+/* 
+  Celular -  até 768px de largura.
+  Tablet - de 768 até 992px de largura.
+  Desktop - de 992px até 1200px.
+  Grandes Telas - Acima de 1200px de largura.
+
+*/
+
+/* Configurações p Celular */
+/* essa abaixo seria a configuração p celular mas como vc já fez p mobile fist primeiro (style.css) vc não precisa fazer pois a configuração p celular já existe. */
+
+/* @media screen and (max-width: 768px){ 
+
+}*/
+
+/* Configurações p Pequenas Tablets */
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+}
+
+/* Configurações p Pequenas Desktop */
+@media screen and (min-width: 992px) and (max-width: 1200px){
+
+}
+
+/* Configurações p Pequenas Grandes Telas */
+@media screen and (min-width: 1200px){
+
+}
 
 /* Impressora */
 @media print {
     
 }
+
