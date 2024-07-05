@@ -16,23 +16,85 @@
 
 }*/
 
-/* Configurações p Pequenas Tablets */
+/* Configurações p  Tablets */
 @media screen and (min-width: 768px) and (max-width: 992px){
+  /* Após fazer primeiro o mobile first(q na verdade são as configurações
+  gerais) vc começa a fazer as modificações p os outros dispositivoe
+  . Nesse caso vou mudar apenas o background do tablet e manter o resto */
+  body {
+    background-image: url(../imagens/back-tablet.jpg);
+  }
+
+  img#tablet {
+    display: block;
+  }
+
+  img#phone {
+    display: none;
+  }
 
 }
 
 /* Configurações p Pequenas Desktop */
 @media screen and (min-width: 992px) and (max-width: 1200px){
+  body {
+    background-image: url(../imagens/back-pc.jpg);
+  }
+
+  img#pc {
+    display: block;
+  }
+
+  img#phone {
+    display: none;
+  }
 
 }
 
 /* Configurações p Pequenas Grandes Telas */
 @media screen and (min-width: 1200px){
+  body {
+    background-image: url(../imagens/back-tv.jpg);
+  }
+
+  img#tv {
+    display: block;
+  }
+
+  img#phone {
+    display: none;
+  }
+
+  /* Vc pode fazer outras configurações p esse dispositivo por ex: */
+  /* Diminuir a largura do main (nas grandes telas).
+     Mudar a cor de fundo. */
+  main {
+    width: 50%;
+    background-color: salmon;
+  }
 
 }
 
 /* Impressora */
 @media print {
+  img#print {
+    display: block;
+  }
+
+  img#phone {
+    display: none;
+  }
+
+  main {
+    border: solid black 1px;
+    text-align: center;
+  }
+
+  main::after {
+    content: 'Impressão do site';
+    text-decoration: overline;/*Overline é uma linha em cima*/
+    
+  }
     
 }
 
