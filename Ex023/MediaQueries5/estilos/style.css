@@ -26,7 +26,8 @@ header h1 {
 }
 
 menu {
-    display: block;
+    /* Desaparece o menu normal nos smartphones */
+    display: none;
 }
 
 menu ul {
@@ -41,7 +42,7 @@ menu ul li a {/*links q estão dentro do menu*/
     background-color: rgb(3, 90, 90);
     color: white;
     text-align: center;
-    border: solid 1px gray;
+    border-top: solid 1px gray;
 
 }
 
@@ -68,4 +69,20 @@ article p {
     text-indent: 20px;/*Dar um espaço na primeira frase de cada paragrafo*/
 
 
+}
+
+/* css do menu Hamburguer */
+#burguer {
+    background-color: gray;
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+#burguer:hover {
+    background-color: white;
+    color:black;
 }
