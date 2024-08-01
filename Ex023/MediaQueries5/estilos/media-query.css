@@ -1,0 +1,34 @@
+@charset 'UTF-8';
+
+/* esse min-width:768 são as configurações de tela
+mímima ou seja de 768 p cima ou seja tablets, pcs, etc...
+ou seja da maior tela até a minima q tem 768px  */
+
+/* Isso quer dizer q as TELAS DE 768PX p baixo
+ NÃO PEGA ESSAS CONFIGURAÇÕES */
+
+@media screen and (min-width: 768px){
+    #burguer {
+        display: none;/*p sumir com o hamburguer*/
+    }
+
+    menu {
+        display: block; /*p aparecer o menu normal*/
+    }
+
+    menu ul li {
+        /*itens do menu horizontal ou seja um ao lado do outro*/
+        display: inline-block;
+    }
+
+    /* se vc quiser q a largura do main(texto)
+    fique com uma largura fixa de 800px p as 
+    tela grandes(acima de 768px, ao invéz de 
+    acompanhar o tamanho de 90% da tela como já
+    estava configurado no estilo.css */
+    main {
+        width: 800px;
+    }
+
+
+}
