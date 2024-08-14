@@ -1,1 +1,40 @@
 @charset 'UTF-8';
+
+/* Reset */
+* {
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+body, html {
+    background-color: blueviolet;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+
+    /*Esse position:relative é P o
+     posicionamento da div section#login  */
+    position: relative;
+}
+
+section#login {
+    background-color:gray;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+
+    /* Esses 4 estilos é p a div section#login ficar exatamente no meio da tela(do main)
+     em qualquel resolução */
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
