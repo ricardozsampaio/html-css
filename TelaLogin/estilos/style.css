@@ -28,7 +28,8 @@ section#login {
     background-color:gray;
     width: 250px;
     height: 500px;
-    border-radius: 20px;
+    border-radius: 20px;/*arredondar as 4 bordas da section*/
+    overflow: hidden;/*arredondar a borda da imagem em cima*/
 
     /* Esses 4 estilos é p a div section#login ficar exatamente no meio da tela(do main)
      em qualquel resolução */
@@ -36,5 +37,18 @@ section#login {
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+}
+
+section#login > #imagem {
+    background-color: green;
+    background-image: url('../imagens/logoLoja.png');
+    height: 200px;
+    background-size: cover;
+    background-position: left center;
+}
+
+section#login > #formulario {
+    padding: 10px;
 
 }
