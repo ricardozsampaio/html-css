@@ -11,13 +11,13 @@
 body, html {
     background-color: blueviolet;
     height: 100vh;
-    width: 100vw;
+    
     
 }
 
 main {
     height: 100vh;
-    width: 100vw;
+    border: solid 1px red;
 
     /*Esse position:relative é P o
      posicionamento da div section#login  */
@@ -25,12 +25,14 @@ main {
 }
 
 section#login {
+    border: solid 1px black;
     background-color:gray;
     width: 250px;
     height: 500px;
     border-radius: 20px;/*arredondar as 4 bordas da section*/
     overflow: hidden;/*arredondar a borda da imagem em cima*/
 
+    /* Centralizar o section#login */
     /* Esses 4 estilos é p a div section#login ficar exatamente no meio da tela(do main)
      em qualquel resolução */
     position: absolute;
@@ -42,13 +44,45 @@ section#login {
 
 section#login > #imagem {
     background-color: green;
-    background-image: url('../imagens/logoLoja.png');
     height: 200px;
+
+    background-image: url('../imagens/logoLoja.png');
     background-size: cover;
     background-position: left center;
 }
 
 section#login > #formulario {
     padding: 10px;
+    
 
+}
+
+/* VERSÃO P TABLET */
+@media screen and (min-width:768px) and (max-width:992px){
+    section#login > #formulario {
+        border: solid 1px yellow;
+    }
+
+    section#login {
+        width: 80vw;/* Largura de 80% da tela */
+    }
+
+
+}
+
+/* VERSÃO ACIMA DE TABLET OU SEJA P TELAS DE TAMANHO GRANDE */
+@media screen and (min-width:992px){
+    section#login {
+        width: 90vw;
+       
+    }
+
+    body {
+        /* gradiente no fundo do body p telas grandes */
+         /* to top quer dizer de baixo p cima - a primeira cor e a segunda */
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+
+    }
+
+    
 }
