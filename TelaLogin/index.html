@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+
+    <!-- Ao invéz de fazer as css p Tablet e Telas grandes no css do style.css 
+    como eu fiz direto.  vc pode criar um arquivo media-query.css, fazer
+    as configurações nele e chamar no aquvivo principal como abaixo -->
+    <!-- <link rel="stylesheet" href="estilos/media-query"> -->
 </head>
 <body>
     <main>
@@ -18,7 +23,25 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Faça o Login p Acessar sua conta!</p>
+
+                <!-- FORMULÁRIO -->
                 <form action="login.php" method="POST">
+                    <!-- CAMPO LOGIN -->
+                    <div class="campo">
+                        <label for="ilogin">Login</label>
+                        <input type="email" name="login" id="ilogin" placeholder="seu e-mail" required autocomplete="email">
+                    </div>
+
+                    <!-- CAMPO SENHA -->
+                    <div class="campo">
+                        <label for="isenha">Senha</label>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" required minlength="8">
+
+                    </div>
+
+                    <!-- BOTÕES P ENTRAR -->
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html">Esqueci a senha</a>
 
                 </form>
 

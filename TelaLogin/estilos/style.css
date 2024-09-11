@@ -57,6 +57,14 @@ section#login > #formulario {
 
 }
 
+#formulario h1 {
+    text-align: center;
+}
+
+#formulario p {
+    font-size: 0.8em;
+}
+
 /* VERSÃO P TABLET */
 @media screen and (min-width:768px) and (max-width:992px){
     section#login > #formulario {
@@ -67,10 +75,15 @@ section#login > #formulario {
         width: 80vw;/* Largura de 80% da tela */
     }
 
+    #formulario p {
+        font-size: 1.2em;
+    }
+
 
 }
 
-/* VERSÃO ACIMA DE TABLET OU SEJA P TELAS DE TAMANHO GRANDE */
+/* VERSÃO ACIMA DE TABLET OU SEJA P TELAS DE TAMANHO GRANDE
+   OU SEJA DE NOTEBOOK P CIMA */
 @media screen and (min-width:992px){
     section#login {
         width: 90vw;
@@ -82,6 +95,10 @@ section#login > #formulario {
          /* to top quer dizer de baixo p cima - a primeira cor e a segunda */
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
 
+    }
+
+    #formulario p {
+        font-size: 2em;
     }
 
     
