@@ -44,6 +44,35 @@
         <div class="item3">3</div>
       
     </div>
+    <!-- Java Script -->
+    <br>
+    <label for="chute">Chute</label>
+    <input type="text" id="chute">
+    <input type="submit" id="enviar" value="Enviar">
+    <br><br>
+    <label for="resultado">Resultado</label>
+    <input type="text" id="resultado">
+
+    <script>
+    enviar.onclick = advinha;
+    function advinha(){
+        var chute = document.getElementById("chute").value;
+        var segredo1 = 10;
+        var segredo2 = 20;
+        var segredo3 = 30;
+
+        if (chute == segredo1 || chute == segredo2 || chute == segredo3){
+            document.getElementById("resultado").value = "vc Acertou";
+            
+        } else {
+            document.getElementById("resultado").value = "vc Errou";
+        }
+
+    }
+
+
+
+    </script>
     
 </body>
 </html>
