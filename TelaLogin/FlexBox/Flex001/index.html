@@ -33,12 +33,28 @@
            text-align: center;
            border-radius: 5px;
         }
+
+        .container {
+            display:flex;/*Aqui as divs itens(q estavam na vertical) já vão ficar na horizontal*/
+            flex-direction: row;/*Idem acima*/
+
+            /*Deixa as divs bem coladas no lado esquedo. já flex-end as divs colariam no lado direito da tela */
+            /*já center as divs ficar centralizadas. Já space-between ficar no meio mas espaçadas(colocando espaços por dentro deles) */
+            /* Já o space-around parece com space-between mas vai colocar espaços entre eles, por dentro e por fora  */
+            justify-content: center;
+            height: 400px;/*Essa altura é p agora alinha os items no eixo vertical*/
+
+            /* Esse flex-stant alinha os items no eixo vetical no topo do container pai */
+            /* Já flex-end alinha os items no eixo vetical em baixo no container pai. */
+            align-items: flex-start;
+        }
     </style>
 </head>
 
 <body>
     
-    <div class="container">
+    <div class="container"><!--A tag div container, q está por fora, é a tag Pai-->
+        <!--Já as tags divs item, q está por dentro, são as tags Filhas-->
         <div class="item1">1</div>
         <div class="item2">2</div>
         <div class="item3">3</div>
