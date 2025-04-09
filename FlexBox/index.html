@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+
+    <style>
+        
+        .container {
+            background-color: rgb(192, 186, 197);
+          
+        }
+
+        .item1 {
+           background-color: blueviolet;
+           width: 100px;
+           height: 100px;
+           text-align: center;
+           border-radius: 5px;
+        }
+        .item2 {
+           background-color: burlywood;
+           width: 100px;
+           height: 100px;
+           text-align: center;
+           border-radius: 5px;
+        }
+        .item3 {
+           background-color: cadetblue;
+           width: 100px;
+           height: 100px;
+           text-align: center;
+           border-radius: 5px;
+        }
+
+        .container {
+            display:flex;/*Aqui as divs itens(q estavam na vertical) já vão ficar na horizontal*/
+            flex-direction: row;/*Idem acima*/
+
+            /*Deixa as divs bem coladas no lado esquedo. já flex-end as divs colariam no lado direito da tela */
+            /*já center as divs ficar centralizadas. Já space-between ficar no meio mas espaçadas(colocando espaços por dentro deles) */
+            /* Já o space-around parece com space-between mas vai colocar espaços entre eles, por dentro e por fora  */
+            justify-content: center;
+            height: 400px;/*Essa altura é p agora alinha os items no eixo vertical*/
+
+            /* Esse flex-stant alinha os items no eixo vetical no topo do container pai */
+            /* Já flex-end alinha os items no eixo vetical em baixo no container pai. */
+            align-items: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="container"><!--A tag div container, q está por fora, é a tag Pai-->
+        <!--Já as tags divs item, q está por dentro, são as tags Filhas-->
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+      
+    </div>
+    <!-- Java Script -->
+    <br>
+    <label for="chute">Chute</label>
+    <input type="text" id="chute">
+    <input type="submit" id="enviar" value="Enviar">
+    <br><br>
+    <label for="resultado">Resultado</label>
+    <input type="text" id="resultado">
+
+    <script>
+        enviar.onclick = advinha;
+        function advinha(){
+            var chute = document.getElementById("chute").value;
+            var segredo1 = 10;
+            var segredo2 = 20;
+            var segredo3 = 30;
+
+            if (chute == segredo1 || chute == segredo2 || chute == segredo3){
+                document.getElementById("resultado").value = "vc Acertou";
+                
+            } else {
+                document.getElementById("resultado").value = "vc Errou";
+            }
+
+        }
+
+    </script>
+
+    <script>
+        // Primeira forma de criar um objeto String => objeto string  a
+        var a = 'Olá Pessoal';
+        alert(a.toUpperCase());
+
+          // Segunda  forma de criar um objeto String => objeto string b
+        var b = new String('Blz Pessoal'); //String() é uma função construtora q junto c a palavra-chave
+        alert(b.toUpperCase());            //new vai ser instanciado(criado) um objeto b. q é um objeto string.
+        
+
+    
+    </script>
+    
+</body>
+</html>
