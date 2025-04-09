@@ -70,24 +70,35 @@
     <input type="text" id="resultado">
 
     <script>
-    enviar.onclick = advinha;
-    function advinha(){
-        var chute = document.getElementById("chute").value;
-        var segredo1 = 10;
-        var segredo2 = 20;
-        var segredo3 = 30;
+        enviar.onclick = advinha;
+        function advinha(){
+            var chute = document.getElementById("chute").value;
+            var segredo1 = 10;
+            var segredo2 = 20;
+            var segredo3 = 30;
 
-        if (chute == segredo1 || chute == segredo2 || chute == segredo3){
-            document.getElementById("resultado").value = "vc Acertou";
-            
-        } else {
-            document.getElementById("resultado").value = "vc Errou";
+            if (chute == segredo1 || chute == segredo2 || chute == segredo3){
+                document.getElementById("resultado").value = "vc Acertou";
+                
+            } else {
+                document.getElementById("resultado").value = "vc Errou";
+            }
+
         }
 
-    }
+    </script>
 
+    <script>
+        var a = 'Olá Pessoal';
+        alert(a.toUpperCase());
 
+        var b = new String('Blz Pessoal'); //String() é uma função construtora q jungo c a palavra-chave
+        alert(b.toUpperCase());  
+        // print(b);         //new vai ser instanciado(criado) um objeto b. q é um objeto string.
+        
 
+        // var img = new SimpleImage('img/abafador1.png');
+        print('string');
     </script>
     
 </body>
