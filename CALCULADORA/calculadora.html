@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+<body>
+      
+ 
+  <!-- PROJETO MULTIPLIQUE TESTE -->
+  <div id="exibe_resultado"> Resultado da Multiplicação: </div>
+
+  <script>
+    
+    //função multiplique
+    function multiplique(a, b){
+      return a * b;
+    }
+    //chamando a função multiplique 
+    var resutadoMultiplicacao = multiplique(10, 50);
+    //pega/captura o elemento div exibe_resultado e atribui à variavel divLocal
+    var divLocal = document.getElementById('exibe_resultado');
+    divLocal.innerHTML = resutadoMultiplicacao;
+  </script>
+  <br>
+  <!-- FIM PROJETO MULTIPLIQUE TESTE -->
+
+
+  <!-- CALCULADORA -->
+  <form action="">
+    <label for="">Valor A </label><input type="number" id="v1">
+    <label for="">Valor B </label><input type="number" id="v2">
+    <br><br>
+    <label for="">Operação</label>
+    <select name="" id="oper">
+      <option value="0">SOMA</option>
+      <option value="1">SUBTRAÇÃO</option>
+      <option value="2">MULTIPLICAÇÃO</option>
+      <option value="3">DIVISÃO</option>
+      <option value="4">POTÊNCIA</option>
+    </select>
+    <!-- chamando a função executar do JS -->
+    <a href="#" onclick="executar()">Executar</a>
+
+  </form>
+  <br><br>
+  <div id="resp">O resultado aparece aqui!!</div>
+
+    <script>
+        // Funções Aritméticas
+        function somar(a, b) {
+        return a + b;
+        }
+        function subtrair(a, b) {
+        return a - b;
+        }
+        function multiplicar(a, b) {
+        return a * b;
+        }
+        function dividir(a, b) {
+        return a / b;
+        }
+        function exponencial(a, b) {
+        return Math.pow(a, b);
+        }
+        
+        //Função Executar
+        function executar(){
+            alert("ok");
+            const a = eval(document.getElementById("v1").value);
+            const b = eval(document.getElementById("v2").value);
+            var oper = eval(document.getElementById("oper").value);//select
+
+            if(oper == 0){
+                var soma = somar(a,b);  
+                document.getElementById('resp').innerHTML = soma;
+            } else if (oper == 1){
+                var subtracao = subtrair(a,b);
+                document.getElementById('resp').innerHTML = subtracao;
+            } else if (oper == 2){
+                var multiplicacao = multiplicar(a,b);
+                document.getElementById('resp').innerHTML = multiplicacao;
+            } else if (oper == 3){
+                var divisao = dividir(a,b);
+                document.getElementById('resp').innerHTML = divisao;
+            } else if (oper == 4){
+                var potencia = exponencial(a,b);
+                document.getElementById('resp').innerHTML = potencia;
+                
+            }
+        }
+        
+    </script>
+
+</body>
+</html>
